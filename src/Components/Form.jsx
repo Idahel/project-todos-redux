@@ -24,7 +24,7 @@ export const Form = () => {
         placeholder="Task text"
       />
       <input
-        className='due-date'
+        className='due-date-btn'
         type="date"
         value={dueDate}
         onChange={(e) => setDueDate(e.target.value)}
