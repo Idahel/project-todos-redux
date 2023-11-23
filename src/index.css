@@ -12,3 +12,115 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Reset some default browser styles */
+body, h1, h2, p, ul {
+  font-family: 'Asap', sans-serif;
+}
+
+body {
+  background-color: #F2F2F2;
+  color: #031059;
+}
+
+h1, h2 {
+  margin-left: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  position: relative;
+  top: 20px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  width: 70%;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #F2836B;
+  color: #F2F2F2;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #d32f2f;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 50%;
+  font-family: 'Asap', sans-serif;
+  color: #031059;
+  font-size: 14px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  position: relative;
+  top: 50px;
+  left: 20px;
+}
+
+/* Optional: Add some styles for completed tasks */
+li.completed {
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+
+.tasks {
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  top: 50px;
+  left: 20px;
+}
+
+.task-filter {
+  position: relative;
+  left: 10px;
+  font-family: 'Asap', sans-serif;
+  font-weight: bold;
+  color: #031059;
+  font-size: 12px;
+}
+
+.complete-all-btn {
+  position: relative;
+  top: 20px;
+}
+
+.due-date {
+  position: relative;
+  top: 50px;
+  left: 20px;
+  font-family: 'Asap', sans-serif;
+  color: #031059;
+  font-size: 14px;
+  padding: 7px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-task-btn {
+  position: relative;
+  top: 50px;
+  left: 30px;
+  font-size: 14px;
+}
+
