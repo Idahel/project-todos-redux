@@ -132,6 +132,19 @@ li.completed {
   top: 30px;
 }
 
+.new-date-list {
+  margin-left: 10px;
+}
+.due-date-list{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.task-text {
+  max-width: 60%;
+  word-wrap: break-word;
+}
+
 .due-date {
   font-family: 'Asap', sans-serif;
   color: #031059;
@@ -170,11 +183,13 @@ ul {
 
 li {
   display: flex;
-  align-items: center;
+  flex-direction: row; /* Adjusted to column */
+  align-items: flex-start; /* Adjusted alignment */
   justify-content: space-between;
   border-bottom: 1px solid #ddd;
-  padding: 10px 0;
-  width: 70%;
+  padding: 10px; /* Adjusted padding */
+  width: 90%;
+  height: auto; /* Set height to auto for dynamic height */
 }
 
 input[type="checkbox"] {

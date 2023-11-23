@@ -62,15 +62,15 @@ import {
               checked={task.complete}
               onChange={() => handleToggle(task.id)}
             />
-            <span style={{ textDecoration: task.complete ? 'line-through' : 'none' }}>
-              {task.text}
-            </span>
-            <span>Created: {new Date(task.timestamp).toLocaleString('en-US', {
+             <span className='task-text'>
+                {task.text}
+              </span>
+            <span className='new-date-list'>Created: {new Date(task.timestamp).toLocaleString('en-US', {
                   year: 'numeric',
                   month: '2-digit', 
                   day: '2-digit',   
                 })}</span>
-            <span>Due Date: {new Date(task.dueDate).toLocaleString('en-US', {
+            <span className='due-date-list'>Due Date: {new Date(task.dueDate).toLocaleString('en-US', {
                   year: 'numeric',
                   month: '2-digit', 
                   day: '2-digit', 
