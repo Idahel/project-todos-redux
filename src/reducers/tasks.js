@@ -1,18 +1,17 @@
-// src/reducers/tasks.js
 import { createSlice } from '@reduxjs/toolkit';
 
 export const tasksSlice = createSlice({
     name: 'tasks',
     initialState: {
-      tasks: [], // Array of tasks
-      filter: 'all', // Default filter
+      tasks: [],
+      filter: 'all',
     },
 
   reducers: {
     addTask: (state, action) => {
-        // Add a new task to the state
+ 
         const newTask = {
-          id: state.tasks.length + 1, // Update to use tasks array
+          id: state.tasks.length + 1,
           text: action.payload.text,
           complete: false,
           timestamp: new Date().toISOString(),
@@ -27,7 +26,6 @@ export const tasksSlice = createSlice({
         state.filter = 'all';
       },
       toggleTask: (state, action) => {
-        // Toggle the completion status of a task
         const task = state.tasks.find((t) => t.id === action.payload.id);
         if (task) {
           task.complete = !task.complete;

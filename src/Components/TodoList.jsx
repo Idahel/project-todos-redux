@@ -1,18 +1,14 @@
-// src/Components/TodoList.jsx
-import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
     toggleTask,
     removeTask,
-    tasksSlice,
     completeAllTasks,
     setFilter,
-    clearFilter,
   } from '../reducers/tasks';
 
 
   export const TodoList = () => {
-    // Destructure 'tasks' and 'filter' from the state
+    
     const { tasks, filter } = useSelector((state) => state.tasks);
     const uncompletedTasks = tasks.filter((task) => !task.complete);
     const dispatch = useDispatch();

@@ -1,18 +1,17 @@
-// src/Components/TodoForm.jsx
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addTask } from '../reducers/tasks';
 
 export const TodoForm = () => {
   const [taskText, setTaskText] = useState('');
-  const [dueDate, setDueDate] = useState(''); // Add state for due date
+  const [dueDate, setDueDate] = useState('');
   const dispatch = useDispatch();
 
   const handleAddTask = () => {
     if (taskText.trim() !== '') {
       dispatch(addTask({ text: taskText, dueDate: dueDate }));
       setTaskText('');
-      setDueDate(''); // Clear due date after adding task
+      setDueDate(''); 
     }
   };
 
