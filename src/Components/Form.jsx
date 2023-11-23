@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addTask } from '../reducers/tasks';
 
-export const TodoForm = () => {
+export const Form = () => {
   const [taskText, setTaskText] = useState('');
   const [dueDate, setDueDate] = useState('');
   const dispatch = useDispatch();
@@ -35,4 +35,4 @@ export const TodoForm = () => {
   );
 };
 
-export default TodoForm;
+export default Form;

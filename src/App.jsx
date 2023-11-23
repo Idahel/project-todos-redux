@@ -2,9 +2,9 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { tasksReducer } from './reducers/tasks';
-import Header from './Components/Header.jsx';
-import TodoList from './Components/TodoList';
-import TodoForm from './Components/ToDoForm';
+import {Header} from './Components/Header';
+import {TodoList} from './Components/TodoList';
+import {Form} from './Components/Form.jsx';
 
 const reducer = combineReducers({
   tasks: tasksReducer,
@@ -16,7 +16,7 @@ export const App = () => {
   return (
     <Provider store={store}>
       <Header />
-      <TodoForm />
+      <Form />
       <TodoList />
     </Provider>
   );
