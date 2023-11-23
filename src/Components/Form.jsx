@@ -16,7 +16,7 @@ export const Form = () => {
   };
 
   return (
-    <div>
+    <div className='form-wrapper'>
       <input
         type="text"
         value={taskText}

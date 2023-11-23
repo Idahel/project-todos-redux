@@ -8,7 +8,7 @@ import {
 
 
   export const TodoList = () => {
-    
+
     const { tasks, filter } = useSelector((state) => state.tasks);
     const uncompletedTasks = tasks.filter((task) => !task.complete);
     const dispatch = useDispatch();
@@ -38,12 +38,14 @@ import {
 
   return (
     <section className='todo-list'>
-    <div className='tasks'>
+    <div>
+    <div className='task-numbers'>
     <p>Total Tasks: {tasks.length}</p>
     <p>Uncompleted Tasks: {uncompletedTasks.length}</p>
+    </div>
     <div>
-      <label>
-        Filter:
+      <label className='filter-label'>
+        Sort tasks:
         <select className='task-filter' value={filter} onChange={(e) => dispatch(setFilter(e.target.value))}>
           <option value="all">All</option>
           <option value="completed">Completed</option>
@@ -65,13 +67,13 @@ import {
             </span>
             <span>Created: {new Date(task.timestamp).toLocaleString('en-US', {
                   year: 'numeric',
-                  month: 'long',
-                  day: 'numeric',
+                  month: '2-digit', 
+                  day: '2-digit',   
                 })}</span>
             <span>Due Date: {new Date(task.dueDate).toLocaleString('en-US', {
                   year: 'numeric',
-                  month: 'long',
-                  day: 'numeric',
+                  month: '2-digit', 
+                  day: '2-digit', 
                 })}</span>
                 <button onClick={() => handleRemove(task.id)}>Remove</button>
           </li>
