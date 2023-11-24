@@ -91,7 +91,7 @@ input[type="text"] {
   width: 50%;
   font-family: 'Asap', sans-serif;
   color: #031059;
-  font-size: 12px;
+  font-size: 10px;
   margin-right: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -99,7 +99,7 @@ input[type="text"] {
 
 .due-date-label{
   color: #031059;
-  font-size: 12px;
+  font-size: 10px;
   font-family: 'Asap', sans-serif;
   font-weight: bold;
   position: relative;
@@ -107,7 +107,7 @@ input[type="text"] {
 
 .task-label {
   color: #031059;
-  font-size: 12px;
+  font-size: 10px;
   font-family: 'Asap', sans-serif;
   font-weight: bold;
   position: relative;
@@ -164,7 +164,7 @@ li.completed {
 .due-date-btn {
   font-family: 'Asap', sans-serif;
   color: #031059;
-  font-size: 12px;
+  font-size: 10px;
   padding: 5px 15px;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -173,7 +173,7 @@ li.completed {
 .add-task-btn {
   position: relative;
   left: 10px;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 
