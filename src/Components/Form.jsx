@@ -16,7 +16,6 @@ export const Form = () => {
   };
 
   const handleDateClick = () => {
-    // Clear the default text when the user clicks on the input
     if (dueDate === 'Due date') {
       setDueDate('');
     }
@@ -24,12 +23,14 @@ export const Form = () => {
 
   return (
     <div className='form-wrapper'>
+      <p className='task-label'>Task:</p>
       <input
         type="text"
         value={taskText}
         onChange={(e) => setTaskText(e.target.value)}
         placeholder="Task text"
       />
+      <p className='due-date-label'>Due Date:</p>
       <input
         className='due-date-btn'
         type="date"
